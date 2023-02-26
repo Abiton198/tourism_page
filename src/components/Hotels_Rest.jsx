@@ -1,28 +1,30 @@
 import React from 'react'
-import Travel_Info_Card from './Travel_Info_Card'
+import Hotels_Info_Card from './Hotels_Info_Card'
 import hotelsData from '../data/hotelsData'
 import SectionHead from './SectionHead'
+import { BsStar } from 'react-icons/bs'
 
 
 const Hotels_Rest = () => {
-  return (
-    <div className='flex'>
-      <SectionHead text='Hotels and Restaurants'/>
-      
-      {hotelsData.map((data,index) => (
-        <Travel_Info_Card 
-              key=  {index}
-              img = {data.img}
-              text = {data.text}/>
-      )
-        
-        
-)}
+  const style = { color: "yellow", fontSize: ".9em" }
 
-        {/* <BlogCard 
-              title='East Village Ice Cream Crawl'
-              text = 'This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to capture clients at different locations upon request for an additional charge. '/> */}
-    </div>
+  return (
+   <div className=''>
+      <SectionHead text='Hotels and Restaurants'/>
+     <div className='mb-20 grid md:grid-cols-4  md:flex-1 my-10 md:my-0 justify-center items-center md:gap-10 lg:gap-10'>
+
+            {hotelsData.map((data,index) => (
+              <Hotels_Info_Card 
+                    key=  {index}
+                    img = {data.img}
+                    text = {data.text}
+                    icon ={<BsStar style={style}/>}
+                    />
+            )        
+            )}
+     </div>
+            </div>
+  
   )
 }
 

@@ -1,12 +1,14 @@
 import React from 'react'
-import { Hotels_Rest, Travel_Tips } from './components'
+import { Hotels_Rest, Travel_Tips ,SectionHead} from './components'
+
 
 
 
 const App = () => {
   return (
-    <div className='flex m-5 p-5 bg-green'>
+    <div className=' flex-col m-2 p-2 bg-green'>
       <Hotels_Rest/>
+      <SectionHead />
       <Travel_Tips/>
     </div>
   )

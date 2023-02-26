@@ -6,8 +6,8 @@ const SectionHead = ({bg_color="black", text}) => {
         }
   return (
     
-          <div>
-              <h1 className='font-3xl' style={textStyle}> {text}</h1>
+          <div className='text-center'>
+              <h1 className='font-black text-3xl' style={textStyle}> {text}</h1>
           </div>
         
         )
