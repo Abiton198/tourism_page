@@ -1,15 +1,16 @@
 import React from 'react'
-import BlogCard from './BlogCard'
-import Card from './Card'
+import Travel_Info_Card from './Travel_Info_Card'
 import hotelsData from '../data/hotelsData'
+import SectionHead from './SectionHead'
 
 
 const Hotels_Rest = () => {
   return (
     <div className='flex'>
+      <SectionHead text='Hotels and Restaurants'/>
       
       {hotelsData.map((data,index) => (
-        <BlogCard 
+        <Travel_Info_Card 
               key=  {index}
               img = {data.img}
               text = {data.text}/>
