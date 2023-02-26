@@ -1,16 +1,16 @@
-import travel_1 from '../images/travel_1.png'
-import travel_2 from '../images/travel_2.png'
+import travel1 from '../assets/images/travel1.png'
+import travel2 from '../assets/images/travel2.png'
 
 export default [
     {
-        img : travel_1
+        img : travel1
     },
     {
         title:'Brooklyn Bridge cinematic photo walk',
         text: 'This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to capture clients at different locations upon request for an additional charge. '
     },
     {
-        img : travel_2
+        img : travel2
     },
     {
         title:'East Village Ice Cream Crawl',

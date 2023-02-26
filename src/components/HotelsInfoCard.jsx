@@ -3,7 +3,7 @@ import React from 'react'
 
 
 // creating props for the Travel and Tips
-const Hotels_Info_Card = ({ img, title, text, icon}) => {
+const HotelsInfoCard = ({ img, title, text, icon}) => {
   return (
     <div className='grid grid-rows-1 mt-5'>
     
@@ -21,4 +21,4 @@ const Hotels_Info_Card = ({ img, title, text, icon}) => {
   )
 }
 
-export default Hotels_Info_Card
+export default HotelsInfoCard

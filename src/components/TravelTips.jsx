@@ -1,10 +1,10 @@
 import React from 'react'
-import Travel_Info_Card from './Hotels_Info_Card'
+import TravelInfoCard from './HotelsInfoCard'
 import TravelTripsData from '../data/TravelTripsData'
 import SectionHead from './SectionHead'
 
 
-function Travel_Tips() {
+function TravelTips() {
   return (
     <div className='mt-20'>
         <SectionHead text='Travel Tips and Advice'/>
@@ -12,7 +12,7 @@ function Travel_Tips() {
      
       {/* images and text rendered on page from data file */}
        {TravelTripsData.map((data,index) =>(
-        <Travel_Info_Card  key={index} 
+        <TravelInfoCard  key={index} 
                     img = {data.img}
                     title ={data.title}
                     text = {data.text}
@@ -22,4 +22,4 @@ function Travel_Tips() {
   )
 }
 
-export default Travel_Tips
+export default TravelTips

@@ -3,7 +3,7 @@ import React from 'react'
 // this is structure for the Hotels and Restaurants 
 // !initial props are written in this reusable component
 
-const Travel_Image_Card = ({img, text}) => {
+const TravelImageCard = ({img, text}) => {
   return (
     <div className='grid grid-rows-1'>
         <img src={img}/>
@@ -13,4 +13,4 @@ const Travel_Image_Card = ({img, text}) => {
   )
 }
 
-export default Travel_Image_Card
+export default TravelImageCard
