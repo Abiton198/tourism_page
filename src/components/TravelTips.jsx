@@ -11,8 +11,8 @@ function TravelTips() {
     <div className='grid md:grid-cols-4  md:flex-1 my-10 md:my-0 justify-center items-center md:gap-10 lg:gap-10'>
      
       {/* images and text rendered on page from data file */}
-       {TravelTripsData.map((data,index) =>(
-        <TravelInfoCard  key={index} 
+       {TravelTripsData.map((data,id) =>(
+        <TravelInfoCard  key={id} 
                     img = {data.img}
                     title ={data.title}
                     text = {data.text}

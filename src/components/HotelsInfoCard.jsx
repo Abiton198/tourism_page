@@ -1,4 +1,7 @@
 import React from 'react'
+import StarRating from '../utils/StarRating'
+import {IoLocationOutline} from 'react-icons/all'
+
 
 
 
@@ -13,8 +16,8 @@ const HotelsInfoCard = ({ img, title, text, icon}) => {
               <p className='text-base'>{text}</p>
 
               <div className='flex justify-between'>
-                    <p className='text-sm'>location</p>
-                    <p className='flex justify-end p-1'>{icon}{icon}{icon}{icon}{icon}</p>
+                    <p className='text-sm flex'>{<IoLocationOutline/>}<span className='ml-1 text-[.8em]'>location</span></p>
+                    <p className='flex justify-end p-1'>{<StarRating/>}</p>
               </div>
           </div>
     </div>
